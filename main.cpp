@@ -1,13 +1,24 @@
 #include <iostream>
+#include <unistd.h>
+#include <cstdlib>
+#include <limits.h>
 
 using namespace std;
 
 
 int main() {
+    char hostname[HOST_NAME_MAX]; // I'm using char!
+    gethostname(hostname, HOST_NAME_MAX);
+
+    const char* username = std::getenv("USER");
     cout << "____________________________________________" << endl;
     cout << "\033[1;36m" << "               Computer Fetch               " << "\033[0;0m" << endl;
     cout << "____________________________________________" << endl;
     cout << "\033[1;36m";
+    cout << "             ";
+    if (username) cout << username;
+    else cout << "idk";
+    cout << "@" << hostname << endl;
     cout << "   .--.      OS: " << flush;
     system("grep '^PRETTY_NAME=' /etc/os-release | cut -d= -f2- | tr -d '\"'");
     cout << "  |o_o |     Bash: " << flush;
