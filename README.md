@@ -1,10 +1,10 @@
 # Computer Fetch
-## A very simple fetch thing I made in C++
+## A very very simple fetch thing I made in C++
 I'm learning C++ and thought it would be easy to make something like this...
 
 ### Installation
 1. Clone this repo
-   ```bash
+```bash
 git clone https://github.com/arielthemonke/CompFetch.git
 ```
 2. cd into the new dir
