@@ -10,7 +10,7 @@ int main() {
     char hostname[HOST_NAME_MAX]; // I'm using char!
     gethostname(hostname, HOST_NAME_MAX);
 
-    const char* username = std::getenv("USER");
+    const char* username = getenv("USER");
     cout << "____________________________________________" << endl;
     cout << "\033[1;36m" << "               Computer Fetch               " << "\033[0;0m" << endl;
     cout << "____________________________________________" << endl;
