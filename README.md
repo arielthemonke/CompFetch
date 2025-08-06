@@ -2,7 +2,9 @@
 ## A very very simple fetch thing I made in C++
 I'm learning C++ and thought it would be easy to make something like this...
 
-### Installation
+works on arch maybe on other distros
+
+### Installation for Arch
 1. Clone this repo
 ```bash
 git clone https://github.com/arielthemonke/CompFetch.git
